@@ -31,8 +31,11 @@ while True:
     # Code for the Fight option
     while True:
       Fight = (input(Attack).lower())
-      if Fight == "punch" or "slap" or "kick":
+      if Fight == "punch" or Fight == "kick":
         print(f"You {Fight}ed him and won!")
+        break
+      elif Fight == "slap":
+        print("You slapped him and won!")
         break
       else:
         print(Error)
